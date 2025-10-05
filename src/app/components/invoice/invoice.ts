@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-invoice',
   imports: [],
   templateUrl: './invoice.html',
-  styleUrl: './invoice.css'
 })
 export class Invoice {
 
