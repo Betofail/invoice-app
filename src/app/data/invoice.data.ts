@@ -16,7 +16,7 @@ export const invoiceData: Invoice = {
   },
   company: {
     name: 'Tech Solutions',
-    fisclalCode: 44123512,
+    fiscalCode: 44123512,
   },
   items: [
     {
