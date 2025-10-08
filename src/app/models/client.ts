@@ -3,5 +3,5 @@ import { Address } from './address';
 export class Client {
   name!: string;
   lastName!: string;
-  adress!: Address;
+  address!: Address;
 }

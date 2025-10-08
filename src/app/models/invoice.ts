@@ -7,5 +7,5 @@ export class Invoice {
   name!: string;
   client!: Client;
   company!: Company;
-  items!: Array<Item[]>;
+  items!: Array<Item>;
 }
