@@ -6,6 +6,7 @@ import { Invoice } from '../../models/invoice';
   selector: 'app-invoice',
   imports: [],
   templateUrl: './invoice.html',
+  standalone: true
 })
 export class InvoiceComponent implements OnInit {
 
