@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
 })
 export class InvoiceView {
 
-  @Input() id!: string;
+  @Input() id!: number;
   @Input() name!: string;
 
 }
