@@ -1,7 +1,6 @@
-import { Invoice } from "../models/invoice";
+import { Invoice } from '../models/invoice';
 
-export const invoiceData: Invoice = {
-
+export const invoiceData: any = {
   id: 1,
   name: 'Pc Components',
   client: {
@@ -12,7 +11,7 @@ export const invoiceData: Invoice = {
       city: 'New York',
       street: '5th Avenue',
       number: '123',
-    }
+    },
   },
   company: {
     name: 'Tech Solutions',
@@ -23,19 +22,19 @@ export const invoiceData: Invoice = {
       id: 1,
       product: 'Cpu Intel i9',
       price: 599,
-      quantity: 1
+      quantity: 1,
     },
     {
       id: 2,
       product: 'Corsair Teclado Mecanico',
       price: 399,
-      quantity: 2
+      quantity: 2,
     },
     {
       id: 3,
       product: 'Monitor Asus',
       price: 899,
-      quantity: 3
+      quantity: 3,
     },
-  ]
-}
+  ],
+};

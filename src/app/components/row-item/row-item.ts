@@ -1,20 +1,17 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Item } from '../../models/item';
-import { RowItem } from '../row-item/row-item';
 
 @Component({
-  selector: 'app-list-items',
-  imports: [RowItem],
-  templateUrl: './list-items.html',
-  styleUrl: './list-items.css',
+  selector: 'tr[app-row-item]',
+  imports: [],
+  templateUrl: './row-item.html',
   standalone: true,
 })
-export class ListItems {
-  @Input() items!: Item[];
+export class RowItem {
+  @Input() item!: Item;
 
   @Output() removeEventEmitter: EventEmitter<number> = new EventEmitter();
-
-  onRemove(id: any) {
+  onRemove(id: number) {
     this.removeEventEmitter.emit(id);
   }
 }

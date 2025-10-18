@@ -6,8 +6,10 @@ import { InvoiceComponent } from './components/invoice/invoice';
   selector: 'app-root',
   imports: [RouterOutlet, InvoiceComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  standalone: true
 })
+
 export class App {
   protected readonly title = signal('invoice-app');
 }
