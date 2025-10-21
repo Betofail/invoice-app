@@ -1,0 +1,16 @@
+<form (ngSubmit)="onSubmit()">
+  <input
+    placeholder="Producto"
+    class="from-control m-3"
+    [(ngModel)]="item.product"
+    name="product"
+  />
+  <input placeholder="Precio" class="from-control m-3" [(ngModel)]="item.price" name="price" />
+  <input
+    placeholder="Cantidad"
+    class="from-control m-3"
+    [(ngModel)]="item.quantity"
+    name="quantity"
+  />
+  <button class="btn btn-primary m-3">nuevo item</button>
+</form>

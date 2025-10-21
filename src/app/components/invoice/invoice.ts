@@ -6,10 +6,12 @@ import { CompanyView } from '../company-view/company-view';
 import { ClientView } from '../client-view/client-view';
 import { ListItems } from '../list-items/list-items';
 import { Total } from '../total/total';
+import { FormItem } from '../form-item/form-item';
+import { Item } from '../../models/item';
 
 @Component({
   selector: 'app-invoice',
-  imports: [InvoiceView, CompanyView, ClientView, ListItems, Total],
+  imports: [InvoiceView, CompanyView, ClientView, ListItems, Total, FormItem],
   templateUrl: './invoice.html',
   standalone: true,
 })
@@ -23,5 +25,9 @@ export class InvoiceComponent implements OnInit {
 
   removeItem(id: number): void {
     this.invoice = this.service.remove(id);
+  }
+
+  addItem(item: Item): void {
+    this.invoice = this.service.save(item);
   }
 }
